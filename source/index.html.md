@@ -433,4 +433,18 @@ var loginSuccess = login.checkKeys({
 
 `https://github.com/yamadapc/steemcli`
 
+# Radiator
 
+### Pure `ruby` API Client for STEEM.
+
+`https://github.com/inertia186/radiator`
+
+```ruby
+require 'radiator'
+
+api = Radiator::Api.new
+response = api.get_active_witnesses
+witnesses = response.result
+
+# ["xeldal", "riverhead", "gtg", "abit", "charlieshrem", "smooth.witness", "bhuz", "pfunk", "anyx", "arhag", "furion", "pharesim", "good-karma", "roelandp", "witness.svk", "steemed", "roadscape", "clayop", "blocktrades", "jesta", "liondani"]
+```
